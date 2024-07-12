@@ -1,0 +1,112 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+.login {
+    width: 350px;
+    margin: 50px auto;
+}
+
+.login input,
+.login button,
+.model input,
+.model button {
+    width: 100%;
+    height: 38px;
+    margin-bottom: 20px;
+}
+
+button {
+    background-color: #115876;
+    color: #fff;
+    font-size: 20px;
+    transition: .3s;
+    outline: none;
+    
+    &:hover {
+        cursor: pointer;
+        background-color: #093F57;
+    }
+}
+
+input {
+    font-size: 18px;
+    padding: 10px;
+    background-color: #eee;
+    color: #000;
+    border: 2px solid #aaa;
+    outline: none;
+}
+
+.wrapper {
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 14px;
+}
+
+.card {
+    width: 280px;
+    border: 1px solid #aaa;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.8;
+}
+
+.card__circle {
+    width: 150px;
+    height: 150px;
+    background: #ddd;
+    border-radius: 50%;
+    margin: auto;
+}
+
+
+
+.popap {
+    display: none;
+}
+
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background: #fff9;
+    background: #0004;
+    z-index: 100;
+    opacity: 0;
+    animation: overlay .5s ease 0s forwards;
+}
+
+@keyframes overlay {
+    to {
+        opacity: 1;
+    }
+}
+
+.model {
+    position: fixed;
+    padding: 20px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -70%) scale(.8);
+    width: 350px;
+    min-height: 400px;
+    background: #fff;
+    z-index: 101;
+    box-shadow: 0 0 25px #0005;
+    opacity: 0;
+    animation: model .5s ease 0s forwards;
+}
+
+@keyframes model {
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
+    }
+}

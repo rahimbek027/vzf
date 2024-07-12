@@ -1,4 +1,5 @@
 export const USERS = [
+ /*
     {
         id: 1234567852,
         name: "John",
@@ -11,4 +12,5 @@ export const USERS = [
         username: "selena32",
         password: "1234567"
     }
+        */
 ]
